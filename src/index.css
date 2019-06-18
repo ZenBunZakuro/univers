@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 body{
 	font-family: 'Montserrat', sans-serif;
+	background-color: grey;
 }
 .Grid{
 	display: grid;
@@ -9,7 +10,7 @@ body{
 	"nav article article"
 	"footer footer footer";
 	grid-template-rows: 60px 1fr 60px;
-	grid-template-columns: 15% 1fr;
+	grid-template-columns: 10% 1fr;
 	grid-gap: 10px;
 	height: 100vh;
 	margin: 0;
@@ -56,6 +57,7 @@ body{
 .Nav a:focus{
 	width: 8em;
 	text-align: center;
+	color: white;
 	background-color: blue;
 	border-radius: 0 90px 90px 0 !important;
 	outline: none;
