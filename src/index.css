@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+.Grid{
+	display: grid;
+	grid-template-areas: 
+	"header header header"
+	"nav article article"
+	"footer footer footer";
+	grid-template-rows: 60px 1fr 60px;
+	grid-template-columns: 15% 1fr;
+	grid-gap: 10px;
+	height: 100vh;
+	margin: 0;
+}
+
+.nav-link{
+	transition: 0.3s;
+	color: #373737;
+	text-shadow: 0 0 5px white;
+}
+.nav-link:hover{
+	background-color: red;
+	color: white;
+}
+
+.Footer, .Article{
+	background-color: #D3D3D3;
+	border-radius: 10px;
+}
+
+.Header{
+	grid-area: header;
+}
+.Header a{
+	margin-right: 5px;
+}
+
+.header-link{
+	color: white !important;
+}
+
+.Nav{
+	grid-area: nav;
+	position: fixed;
+	top: 100px;
+}
+.Nav a{
+	width: 8em;
+	text-align: center;
+	border-radius: 0 90px 90px 0 !important;
+	transition: 0.3s;
+	margin-bottom: 5px;
+}
+.Nav a:focus{
+	width: 8em;
+	text-align: center;
+	background-color: blue;
+	border-radius: 0 90px 90px 0 !important;
+	outline: none;
+}
+
+.Article{
+	grid-area: article;
+	padding: 10px;
+	text-align: justify;
+	text-indent: 1.5em;
+}
+.Article h1, h2, h3{
+	text-align: center;
+}
