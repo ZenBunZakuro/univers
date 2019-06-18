@@ -6,6 +6,7 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import Page1 from './components/Page1';
 import Test from './components/Test';
+import Page2 from './components/Page2';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Nav />
         <Route exact path="/" component={Home} />
         <Route exact path="/page1" component={Page1} />
+        <Route exact path="/page2" component={Page2} />
         <Route exact path="/test" component={Test} />
       </div>
     </Router>
